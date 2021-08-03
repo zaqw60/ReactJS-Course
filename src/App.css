@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  width: 250px;
+  margin: auto;
+}
+
+.App-header {
+  height: 30px;
+  background-color: #8eadeb;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #000;
+}
+
+.mass {
+  height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #fa47e2;
+  border: 1px solid #000;
+}
+.messageList {
+  width: 250px;
+  min-height: 20px;
+  background-color: #f5f36e;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/*# sourceMappingURL=App.css.map */
