@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+li {
+  width: 300px;
+  padding: 10px;
+  background-color: #e6e338;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.header {
+  height: 50px;
+  background-color: #fa4c4c;
+  border: 1px solid #000;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+  width: 70%;
+  background-color: #f5f36e;
+}
+
+.messageList {
+  width: 100%;
+  background-color: #f5f36e;
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.messageItem {
+  width: 100%;
+}
+
+.chatList {
+  width: 30%;
+  background-color: #85cee4;
+  border: 1px solid #000;
+  height: 100%;
+}
+
+.MuiList-root {
+  background-color: #85cee4;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=layout.css.map */
