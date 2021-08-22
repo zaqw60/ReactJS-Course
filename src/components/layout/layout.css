@@ -19,12 +19,40 @@ li {
 }
 
 .header {
-  height: 50px;
-  background-color: #fa4c4c;
+  height: 150px;
+  background-color: #71f56d;
   border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.App {
+.menu {
+  padding: 20px;
+}
+
+.profile {
+  padding: 20px;
+}
+
+.roomsRedactor {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.firstName {
+  background-color: #9d54f0;
+  border: 1px solid #000;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +101,7 @@ li {
 }
 
 .chatList {
-  width: 30%;
+  width: 40%;
   background-color: #85cee4;
   border: 1px solid #000;
   height: 100%;
@@ -87,5 +115,21 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.err {
+  height: 100vh;
+  background-color: #fa9797;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.err404 {
+  text-align: center;
+  width: 100%;
 }
 /*# sourceMappingURL=layout.css.map */
