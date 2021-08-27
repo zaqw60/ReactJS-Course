@@ -1,17 +1,26 @@
 import { Button } from "@material-ui/core"
 import TextField from "@material-ui/core/TextField"
 import { useEffect, useRef } from "react"
+import { useSelector, useDispatch } from "react-redux"
+import { useParams } from "react-router"
+import { handleChangeMessageValue } from "../../store/conversations"
+import { sendMessageWithThunk } from "../../store/messages"
 import { Message } from "./message"
 
-export const MessageList = ({
-  messages,
-  value,
-  sendMessage,
-  handleChangeValue,
-}) => {
+export const MessageList = () => {
+  const { roomId } = useParams()
+  const dispatch = useDispatch()
+  const messages = useSelector((state) => state.messages.messages[roomId] || [])
+  const value = useSelector(
+    (state) =>
+      state.conversations.conversations.find(
+        (conversations) => conversations.title === roomId,
+      )?.value || "",
+  )
+
   const handleSendMessage = () => {
     if (value) {
-      sendMessage({ author: "User", message: value })
+      dispatch(sendMessageWithThunk({ author: "User", message: value }, roomId))
     }
   }
 
@@ -36,7 +45,9 @@ export const MessageList = ({
           label="Введите сообщение"
           value={value}
           fullWidth={true}
-          onChange={handleChangeValue}
+          onChange={(e) =>
+            dispatch(handleChangeMessageValue(e.target.value, roomId))
+          }
         />
         <Button onClick={handleSendMessage} variant="contained" color="primary">
           Primary
