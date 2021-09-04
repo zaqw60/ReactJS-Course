@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chat component snapshot 1`] = `
+<div>
+  <a
+    href="/chat/room1"
+  >
+    <div
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiListItem-root item MuiListItem-gutters MuiListItem-button"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="MuiListItemText-root text"
+      >
+        <span
+          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+        >
+          room1
+        </span>
+      </div>
+      <div
+        class="MuiListItemText-root text"
+      >
+        <span
+          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+        >
+          User: Test
+        </span>
+      </div>
+      <div
+        class="MuiListItemText-root text"
+      >
+        <span
+          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+        >
+          12.30
+        </span>
+      </div>
+      <button
+        aria-label="delete"
+        class="MuiButtonBase-root MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </div>
+    <hr
+      class="MuiDivider-root"
+    />
+  </a>
+</div>
+`;
